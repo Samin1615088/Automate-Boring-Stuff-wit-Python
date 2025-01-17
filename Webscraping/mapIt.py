@@ -1,3 +1,23 @@
+"""
+This script allows the user to search for a location on Google Maps using two methods:
+1. By providing an address via the clipboard or command-line input.
+2. By reading addresses from a file named 'location.txt' (or any file user created).
+
+The user is prompted to choose one of the methods, and the script will open the corresponding
+Google Maps search results in the default web browser.
+
+Dependencies:
+- webbrowser: To open web pages.
+- sys: To handle command-line arguments.
+- pyperclip: To read from the clipboard.
+- time: To add delays between opening multiple addresses from a file.
+
+Usage:
+1. Run the script.
+2. Choose the method to search for the location.
+"""
+
+
 import webbrowser, sys, pyperclip, time
 
 # function to search location by clipboard or input
